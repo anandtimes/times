@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study in Malaysia - Your Gateway to Quality Education</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.95) 100%), 
+                        url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80') center/cover;
+            color: white;
+            padding: 100px 20px 80px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 0;
+        }
+        
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.3em;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .cta-banner {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+            margin: 0;
+        }
+        
+        .cta-banner h3 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        
+        .cta-banner p {
+            font-size: 1.15em;
+            margin-bottom: 25px;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-btn {
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .cta-btn-primary {
+            background: white;
+            color: #667eea;
+        }
+        
+        .cta-btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255,255,255,0.3);
+        }
+        
+        .cta-btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .cta-btn-secondary:hover {
+            background: white;
+            color: #667eea;
+            transform: translateY(-3px);
+        }
+        
+        .stats {
+            background: #f8f9fa;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .stat-item {
+            padding: 20px;
+        }
+        
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #667eea;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 1.1em;
+            color: #555;
+        }
+        
+        .section {
+            padding: 60px 20px;
+        }
+        
+        .section-alt {
+            background: #f8f9fa;
+        }
+        
+        .section-with-bg {
+            background: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), 
+                        url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600&q=80') center/cover fixed;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.15em;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            line-height: 1.8;
+        }
+        
+        .section-banner {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .section-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .section-banner-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8) 0%, rgba(118, 75, 162, 0.8) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3em;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .benefit-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        .benefit-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .benefit-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .how-it-works {
+            background: linear-gradient(rgba(248,249,250,0.95), rgba(248,249,250,0.95)), 
+                        url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1600&q=80') center/cover fixed;
+        }
+        
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .step-card {
+            text-align: center;
+            padding: 35px 25px;
+            background: white;
+            border-radius: 12px;
+            position: relative;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        
+        .step-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .step-number {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            font-weight: 700;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+        }
+        
+        .step-card h3 {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .step-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        .universities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .university-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+        
+        .university-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .university-banner {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .uni-1 { background: linear-gradient(rgba(102, 126, 234, 0.85), rgba(118, 75, 162, 0.85)), 
+                            url('https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80') center/cover; }
+        .uni-2 { background: linear-gradient(rgba(102, 126, 234, 0.85), rgba(118, 75, 162, 0.85)), 
+                            url('https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=800&q=80') center/cover; }
+        .uni-3 { background: linear-gradient(rgba(102, 126, 234, 0.85), rgba(118, 75, 162, 0.85)), 
+                            url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&q=80') center/cover; }
+        .uni-4 { background: linear-gradient(rgba(102, 126, 234, 0.85), rgba(118, 75, 162, 0.85)), 
+                            url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80') center/cover; }
+        .uni-5 { background: linear-gradient(rgba(102, 126, 234, 0.85), rgba(118, 75, 162, 0.85)), 
+                            url('https://images.unsplash.com/photo-1568792923760-d70635a89fdc?w=800&q=80') center/cover; }
+        .uni-6 { background: linear-gradient(rgba(102, 126, 234, 0.85), rgba(118, 75, 162, 0.85)), 
+                            url('https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=800&q=80') center/cover; }
+        
+        .university-icon {
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .university-content {
+            padding: 30px;
+        }
+        
+        .university-content h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .university-info {
+            margin-bottom: 15px;
+        }
+        
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .info-label {
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .info-value {
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .course-card {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: all 0.3s;
+        }
+        
+        .course-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .course-icon {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+        }
+        
+        .course-card h3 {
+            font-size: 1.4em;
+            margin-bottom: 12px;
+            color: #2c3e50;
+        }
+        
+        .course-card p {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+        
+        .testimonials-slider {
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin: 20px;
+        }
+        
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            gap: 20px;
+        }
+        
+        .testimonial-avatar {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.2em;
+            font-weight: 700;
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+        }
+        
+        .testimonial-info h4 {
+            font-size: 1.4em;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        
+        .testimonial-info p {
+            color: #667eea;
+            font-weight: 500;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: #555;
+            line-height: 1.9;
+            font-size: 1.1em;
+        }
+        
+        .stars {
+            color: #fbbf24;
+            font-size: 1.3em;
+            margin-top: 20px;
+        }
+        
+        .careers-section {
+            background: white;
+        }
+        
+        .sectors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .sector-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 5px solid #667eea;
+            transition: all 0.3s;
+        }
+        
+        .sector-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .sector-card h3 {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .sector-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .documents-section {
+            background: linear-gradient(rgba(248,249,250,0.95), rgba(248,249,250,0.95)), 
+                        url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80') center/cover fixed;
+        }
+        
+        .documents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .document-item {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+        
+        .document-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+        }
+        
+        .document-icon {
+            font-size: 2.2em;
+            color: #667eea;
+        }
+        
+        .document-item span {
+            font-size: 1.05em;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        
+        .faq-section {
+            background: white;
+        }
+        
+        .faq-container {
+            max-width: 900px;
+            margin: 40px auto;
+        }
+        
+        .faq-item {
+            background: #f8f9fa;
+            margin-bottom: 18px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+        
+        .faq-item:hover {
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .faq-question {
+            padding: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #2c3e50;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s;
+        }
+        
+        .faq-question:hover {
+            background: #e9ecef;
+        }
+        
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s;
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 25px 25px;
+            max-height: 500px;
+        }
+        
+        .faq-toggle {
+            font-size: 1.8em;
+            transition: transform 0.3s;
+            color: #667eea;
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        
+        .form-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 70px 20px;
+            color: white;
+        }
+        
+        .form-container {
+            max-width: 750px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .form-container h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 2.2em;
+        }
+        
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+            font-weight: 600;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: start;
+            gap: 12px;
+            margin: 25px 0;
+        }
+        
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+            margin-top: 5px;
+        }
+        
+        .checkbox-group label {
+            margin: 0;
+            font-size: 0.95em;
+            color: #555;
+        }
+        
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            flex: 1;
+            padding: 16px 35px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+        
+        .btn-whatsapp:hover {
+            background: #22c55e;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+        }
+        
+        .trust-section {
+            background: #f8f9fa;
+            padding: 70px 20px;
+            text-align: center;
+        }
+        
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            margin-top: 50px;
+        }
+        
+        .trust-badge {
+            text-align: center;
+        }
+        
+        .trust-icon {
+            font-size: 3.5em;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .trust-badge h4 {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+        
+        .trust-badge p {
+            color: #666;
+        }
+        
+        .contact-section {
+            background: #2c3e50;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 900px;
+            margin: 40px auto 0;
+        }
+        
+        .contact-card {
+            padding: 25px;
+        }
+        
+        .contact-card h4 {
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+        
+        .contact-card p {
+            line-height: 1.9;
+            opacity: 0.95;
+        }
+        
+        .success-message {
+            display: none;
+            background: #10b981;
+            color: white;
+            padding: 18px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            
+            .hero p {
+                font-size: 1.1em;
+            }
+            
+            .btn-group {
+                flex-direction: column;
+            }
+            
+            .form-container {
+                padding: 30px;
+            }
+            
+            .steps-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <div style="font-size: 1.2em; margin-bottom: 15px; opacity: 0.95; font-weight: 600;">ApplyRadar - Your Trusted Study Abroad Partner Since 2009</div>
+            <h1>Transform Your Future with Quality Education in Malaysia</h1>
+            <p>Discover world-class universities, affordable tuition fees, and a vibrant multicultural experience in one of Asia's most dynamic study destinations</p>
+            <a href="#enquiry-form" style="display: inline-block; margin-top: 20px; padding: 15px 40px; background: white; color: #667eea; border-radius: 50px; font-weight: 700; font-size: 1.1em; text-decoration: none; box-shadow: 0 5px 20px rgba(0,0,0,0.3); transition: all 0.3s;">Get Free Counselling →</a>
+        </div>
+    </div>
+
+    <div class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Years of Experience</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">50,000+</span>
+                <span class="stat-label">Students Guided</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">University Partners</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">95%</span>
+                <span class="stat-label">Success Rate</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-banner">
+        <div class="container">
+            <h3>Ready to Start Your Study Journey in Malaysia?</h3>
+            <p>Get expert guidance from ApplyRadar's experienced counsellors - completely free!</p>
+            <div class="cta-buttons">
+                <a href="#enquiry-form" class="cta-btn cta-btn-primary">Apply Now - It's Free!</a>
+                <a href="https://api.whatsapp.com/send/?phone=60177737817" target="_blank" class="cta-btn cta-btn-secondary">💬 Chat on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-with-bg">
+        <div class="container">
+            <div class="section-banner">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80" alt="Why Choose Malaysia">
+                <div class="section-banner-overlay">Why Choose Malaysia?</div>
+            </div>
+            <h2 class="section-title">Why Choose Malaysia for Your Higher Education?</h2>
+            <p class="section-subtitle">Malaysia offers a perfect blend of quality education, cultural diversity, and affordability that makes it an ideal destination for international students.</p>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎓</div>
+                    <h3>World-Class Education</h3>
+                    <p>Study at internationally recognized universities with programs accredited by global bodies. Malaysia hosts branch campuses of top UK and Australian universities.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Affordable Excellence</h3>
+                    <p>Quality education at a fraction of the cost compared to Western countries. Tuition fees and living costs are 50-70% lower than Australia, UK, or USA.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌍</div>
+                    <h3>Multicultural Environment</h3>
+                    <p>Experience a diverse blend of cultures, religions, and traditions. English is widely spoken, making it easy for international students to adapt.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛂</div>
+                    <h3>Easy Visa Process</h3>
+                    <p>Straightforward student visa procedures with high approval rates. Most applications are processed within 4-6 weeks.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💼</div>
+                    <h3>Career Opportunities</h3>
+                    <p>Access to internships and part-time work options during your studies. Malaysia's growing economy offers excellent post-graduation prospects.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏥</div>
+                    <h3>Safe & Modern</h3>
+                    <p>Enjoy a safe, politically stable country with excellent infrastructure, healthcare, and a tropical climate year-round.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-banner">
+        <div class="container">
+            <h3>🎓 Take the First Step Towards Your Dream Degree</h3>
+            <p>ApplyRadar's counsellors will help you choose the right university and course for your future</p>
+            <div class="cta-buttons">
+                <a href="#enquiry-form" class="cta-btn cta-btn-primary">Get Free Consultation</a>
+                <a href="https://api.whatsapp.com/send/?phone=60177737817" target="_blank" class="cta-btn cta-btn-secondary">Ask Your Questions</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section how-it-works">
+        <div class="container">
+            <div class="section-banner">
+                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1600&q=80" alt="How It Works">
+                <div class="section-banner-overlay">How It Works</div>
+            </div>
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Your journey to studying in Malaysia is simple and straightforward. Follow these easy steps to begin your educational adventure.</p>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Complete the Form</h3>
+                    <p>Submit your basic details to get started with the application process.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Submit Your Documents</h3>
+                    <p>Share your academic documents for evaluation by our team.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Select a University</h3>
+                    <p>Choose the best option with guidance from our expert advisors.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Receive an Offer Letter</h3>
+                    <p>Get an official offer from your chosen university within days.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <h3>Pay Fees</h3>
+                    <p>Settle application and visa-related payments securely.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">6</div>
+                    <h3>Obtain Your Visa</h3>
+                    <p>Receive your Visa Approval Letter and start packing!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-banner">
+        <div class="container">
+            <h3>🚀 Your Journey Starts Here - Let ApplyRadar Guide You</h3>
+            <p>Our expert team handles everything from university selection to visa approval</p>
+            <div class="cta-buttons">
+                <a href="#enquiry-form" class="cta-btn cta-btn-primary">Start My Application</a>
+                <a href="https://api.whatsapp.com/send/?phone=60177737817" target="_blank" class="cta-btn cta-btn-secondary">Talk to Counsellor</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="section-banner">
+                <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=1600&q=80" alt="Popular Universities">
+                <div class="section-banner-overlay">Top Universities</div>
+            </div>
+            <h2 class="section-title">Popular Universities in Malaysia</h2>
+            <p class="section-subtitle">Explore top-ranking universities offering internationally recognized degrees with affordable tuition fees.</p>
+            <div class="universities-grid">
+                <div class="university-card">
+                    <div class="university-banner uni-1">
+                        <div class="university-icon">🎓</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>University of Malaya (UM)</h3>
+                        <div class="university-info">
+                            <div class="info-row">
+                                <span class="info-label">QS Ranking</span>
+                                <span class="info-value">#60 Global</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Annual Tuition</span>
+                                <span class="info-value">RM 4,000-25,000</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Kuala Lumpur</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="university-card">
+                    <div class="university-banner uni-2">
+                        <div class="university-icon">🏛️</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>Universiti Putra Malaysia (UPM)</h3>
+                        <div class="university-info">
+                            <div class="info-row">
+                                <span class="info-label">QS Ranking</span>
+                                <span class="info-value">#143 Global</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Annual Tuition</span>
+                                <span class="info-value">RM 3,500-20,000</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Selangor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="university-card">
+                    <div class="university-banner uni-3">
+                        <div class="university-icon">🌟</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>Universiti Kebangsaan Malaysia (UKM)</h3>
+                        <div class="university-info">
+                            <div class="info-row">
+                                <span class="info-label">QS Ranking</span>
+                                <span class="info-value">#159 Global</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Annual Tuition</span>
+                                <span class="info-value">RM 3,000-18,000</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Bangi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="university-card">
+                    <div class="university-banner uni-4">
+                        <div class="university-icon">📚</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>Taylor's University</h3>
+                        <div class="university-info">
+                            <div class="info-row">
+                                <span class="info-label">QS Ranking</span>
+                                <span class="info-value">#284 Global</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Annual Tuition</span>
+                                <span class="info-value">RM 30,000-70,000</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Subang Jaya</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="university-card">
+                    <div class="university-banner uni-5">
+                        <div class="university-icon">🔬</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>Monash University Malaysia</h3>
+                        <div class="university-info">
+                            <div class="info-row">
+                                <span class="info-label">QS Ranking</span>
+                                <span class="info-value">#42 Global</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Annual Tuition</span>
+                                <span class="info-value">RM 45,000-90,000</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Bandar Sunway</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="university-card">
+                    <div class="university-banner uni-6">
+                        <div class="university-icon">🏫</div>
+                    </div>
+                    <div class="university-content">
+                        <h3>Sunway University</h3>
+                        <div class="university-info">
+                            <div class="info-row">
+                                <span class="info-label">QS Ranking</span>
+                                <span class="info-value">#586 Global</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Annual Tuition</span>
+                                <span class="info-value">RM 25,000-60,000</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Petaling Jaya</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-banner">
+        <div class="container">
+            <h3>🎯 Build Your Career in Malaysia's Growing Economy</h3>
+            <p>Let ApplyRadar connect you with universities that offer the best career opportunities</p>
+            <div class="cta-buttons">
+                <a href="#enquiry-form" class="cta-btn cta-btn-primary">Explore Career Paths</a>
+                <a href="https://api.whatsapp.com/send/?phone=60177737817" target="_blank" class="cta-btn cta-btn-secondary">Speak to Expert</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-alt">
+        <div class="container">
+            <div class="section-banner">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80" alt="Popular Courses">
+                <div class="section-banner-overlay">Popular Courses</div>
+            </div>
+            <h2 class="section-title">Popular Courses in Malaysia</h2>
+            <p class="section-subtitle">Explore high-demand programs that offer excellent career prospects and industry-relevant skills.</p>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-icon">💻</div>
+                    <h3>Computer Science & IT</h3>
+                    <p>Software development, AI, cybersecurity, and data science programs</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">💼</div>
+                    <h3>Business & Management</h3>
+                    <p>MBA, marketing, finance, and international business degrees</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">⚙️</div>
+                    <h3>Engineering</h3>
+                    <p>Mechanical, electrical, civil, and chemical engineering programs</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🏥</div>
+                    <h3>Medicine & Healthcare</h3>
+                    <p>MBBS, nursing, pharmacy, and biomedical sciences</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🎨</div>
+                    <h3>Arts & Design</h3>
+                    <p>Graphic design, multimedia, animation, and creative arts</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">📊</div>
+                    <h3>Accounting & Finance</h3>
+                    <p>ACCA, CPA, banking, and financial management programs</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🏗️</div>
+                    <h3>Architecture</h3>
+                    <p>Urban planning, interior design, and architectural studies</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🔬</div>
+                    <h3>Science & Technology</h3>
+                    <p>Biotechnology, chemistry, physics, and applied sciences</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-banner">
+        <div class="container">
+            <h3>💡 Confused About Which Course to Choose?</h3>
+            <p>ApplyRadar's counsellors provide personalized guidance based on your interests and career goals</p>
+            <div class="cta-buttons">
+                <a href="#enquiry-form" class="cta-btn cta-btn-primary">Get Course Recommendations</a>
+                <a href="https://api.whatsapp.com/send/?phone=60177737817" target="_blank" class="cta-btn cta-btn-secondary">Discuss My Options</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section careers-section">
+        <div class="container">
+            <div class="section-banner">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80" alt="Career Prospects">
+                <div class="section-banner-overlay">Career Prospects</div>
+            </div>
+            <h2 class="section-title">Career Prospects in Malaysia</h2>
+            <p class="section-subtitle">Malaysia's diverse job market offers exciting opportunities across various sectors for graduates.</p>
+            <div class="sectors-grid">
+                <div class="sector-card">
+                    <h3>Information Technology</h3>
+                    <p>Malaysia is becoming a regional tech hub with growing demand for software developers, data analysts, and IT specialists. Major companies like Google, Microsoft, and local tech giants are actively hiring.</p>
+                </div>
+                <div class="sector-card">
+                    <h3>Finance & Banking</h3>
+                    <p>As a major financial center in Southeast Asia, Malaysia offers excellent opportunities in banking, investment, insurance, and fintech sectors with competitive salaries.</p>
+                </div>
+                <div class="sector-card">
+                    <h3>Healthcare</h3>
+                    <p>The healthcare industry is rapidly expanding with increasing demand for doctors, nurses, pharmacists, and medical researchers in both public and private sectors.</p>
+                </div>
+                <div class="sector-card">
+                    <h3>Engineering</h3>
+                    <p>From oil and gas to renewable energy, Malaysia's engineering sector offers diverse opportunities in manufacturing, construction, and infrastructure development.</p>
+                </div>
+                <div class="sector-card">
+                    <h3>Hospitality & Tourism</h3>
+                    <p>With millions of tourists annually, the hospitality industry provides careers in hotel management, event planning, and tourism services.</p>
+                </div>
+                <div class="sector-card">
+                    <h3>Education</h3>
+                    <p>International schools and universities are always seeking qualified educators, lecturers, and academic professionals across various disciplines.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-alt">
+        <div class="container">
+            <div class="section-banner">
+                <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80" alt="Student Testimonials">
+                <div class="section-banner-overlay">Success Stories</div>
+            </div>
+            <h2 class="section-title">What Our Students Say</h2>
+            <p class="section-subtitle">Hear from students who successfully started their educational journey with us.</p>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">RS</div>
+                        <div class="testimonial-info">
+                            <h4>Rajesh Sharma</h4>
+                            <p>Computer Science, Taylor's University</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"The counsellors helped me find the perfect university that matched my budget and career goals. The entire application process was smooth, and I received my visa within 4 weeks. Now I'm studying at one of the best tech programs in Malaysia!"</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">PA</div>
+                        <div class="testimonial-info">
+                            <h4>Priya Agarwal</h4>
+                            <p>Business Management, Sunway University</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"I was confused about which course to choose, but the team provided excellent guidance based on my interests. They were always available to answer my questions and helped with every step from application to arrival in Malaysia."</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">AK</div>
+                        <div class="testimonial-info">
+                            <h4>Ahmed Khan</h4>
+                            <p>Engineering, University of Malaya</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Studying in Malaysia was the best decision I made. The quality of education is excellent, and the living costs are much lower than other countries. The support I received made the entire journey stress-free."</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section documents-section">
+        <div class="container">
+            <div class="section-banner">
+                <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80" alt="Required Documents">
+                <div class="section-banner-overlay">Documents Required</div>
+            </div>
+            <h2 class="section-title">Documents Required</h2>
+            <p class="section-subtitle">Prepare these essential documents for a smooth application process.</p>
+            <div class="documents-grid">
+                <div class="document-item">
+                    <span class="document-icon">📄</span>
+                    <span>Completed Application Form</span>
+                </div>
+                <div class="document-item">
+                    <span class="document-icon">🎓</span>
+                    <span>Academic Transcripts & Certificates</span>
+                </div>
+                <div class="document-item">
+                    <span class="document-icon">🛂</span>
+                    <span>Valid Passport (min. 18 months validity)</span>
+                </div>
+                <div class="document-item">
+                    <span class="document-icon">📸</span>
+                    <span>Passport-sized Photographs</span>
+                </div>
+                <div class="document-item">
+                    <span class="document-icon">📝</span>
+                    <span>Statement of Purpose</span>
+                </div>
+                <div class="document-item">
+                    <span class="document-icon">💳</span>
+                    <span>Proof of Financial Support</span>
+                </div>
+                <div class="document-item">
+                    <span class="document-icon">🩺</span>
+                    <span>Medical Examination Report</span>
+                </div>
+                <div class="document-item">
+                    <span class="document-icon">✉️</span>
+                    <span>Recommendation Letters (if required)</span>
+                </div>
+                <div class="document-item">
+                    <span class="document-icon">📋</span>
+                    <span>English Proficiency Test (IELTS/TOEFL)</span>
+                </div>
+                <div class="document-item">
+                    <span class="document-icon">🏠</span>
+                    <span>Accommodation Proof (if available)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-banner">
+        <div class="container">
+            <h3>📋 Need Help With Your Application Documents?</h3>
+            <p>ApplyRadar's team will guide you through every document requirement</p>
+            <div class="cta-buttons">
+                <a href="#enquiry-form" class="cta-btn cta-btn-primary">Get Document Checklist</a>
+                <a href="https://api.whatsapp.com/send/?phone=60177737817" target="_blank" class="cta-btn cta-btn-secondary">Get Assistance</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Find answers to common questions about studying in Malaysia.</p>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How much does it cost to study in Malaysia?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Tuition fees in Malaysia range from RM 3,000 to RM 90,000 per year depending on the university and program. Living expenses typically cost between RM 1,000 to RM 2,500 per month, making Malaysia one of the most affordable study destinations in Asia.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I work part-time while studying?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, international students are allowed to work part-time up to 20 hours per week during semester breaks and holidays. You need approval from your institution and the Immigration Department.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is the student visa process?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        After receiving your offer letter from the university, they will apply for your student pass. The process typically takes 4-8 weeks. You'll need to provide medical reports, passport copies, and other required documents.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is IELTS mandatory for admission?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Most universities require IELTS (minimum 5.5-6.0) or TOEFL scores. However, some universities offer conditional admission or English language courses if you don't meet the requirement initially.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is the intake period for Malaysian universities?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Malaysian universities typically have 2-3 intakes per year: January/February, May/June, and September/October. Some universities offer flexible intake options throughout the year.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are Malaysian degrees recognized internationally?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, Malaysian degrees are recognized globally. Many universities have international accreditations, and branch campuses offer degrees from UK and Australian universities.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What are the living conditions like for international students?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Malaysia offers excellent living conditions with modern infrastructure, affordable accommodation, diverse food options, efficient public transport, and a safe environment. Most universities provide on-campus or nearby housing options.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do I need a scholarship to study in Malaysia?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        While not mandatory, many universities offer scholarships based on academic merit. Malaysian education is already affordable compared to Western countries, making it accessible even without scholarships.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="trust-section">
+        <div class="container">
+            <h2 class="section-title">Why Students Trust ApplyRadar</h2>
+            <p class="section-subtitle">Since 2009, we've been helping students achieve their dreams of studying in Malaysia. Based in Malaysia with direct access to all universities, we provide unbiased, student-first guidance.</p>
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <div class="trust-icon">🏆</div>
+                    <h4>Since 2009</h4>
+                    <p>Over 15 years of expertise in Malaysian education</p>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-icon">🤝</div>
+                    <h4>Unbiased Guidance</h4>
+                    <p>Student-first approach, not commission-driven</p>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-icon">📍</div>
+                    <h4>Based in Malaysia</h4>
+                    <p>Direct access to all universities and institutions</p>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-icon">💯</div>
+                    <h4>No Hidden Fees</h4>
+                    <p>Transparent process with free counselling</p>
+                </div>
+            </div>
+            <div style="margin-top: 40px; padding: 30px; background: white; border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 1.5em;">About ApplyRadar</h3>
+                <p style="color: #666; line-height: 1.9; font-size: 1.05em;">
+                    Founded in 2009, ApplyRadar started as Afterschool.my to help Malaysian students find the right universities. Today, we're the most trusted education consultancy for international students seeking quality, affordable education in Malaysia. Unlike traditional agents who promote partner universities, our counsellors recommend institutions based solely on what's best for YOU. Being based in Malaysia and working with almost all universities allows us to offer truly unbiased guidance. Our mission is simple: provide every student with the best education options and help them make informed decisions about their future.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-banner">
+        <div class="container">
+            <h3>🌟 Join 50,000+ Students Who Chose ApplyRadar</h3>
+            <p>Experience the difference of working with Malaysia's most trusted education consultancy</p>
+            <div class="cta-buttons">
+                <a href="#enquiry-form" class="cta-btn cta-btn-primary">Start Your Application Today</a>
+                <a href="https://api.whatsapp.com/send/?phone=60177737817" target="_blank" class="cta-btn cta-btn-secondary">Connect on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-section" id="enquiry-form">
+        <div class="container">
+            <div class="form-container">
+                <h2>🎓 Start Your Malaysian Education Journey with ApplyRadar</h2>
+                <p style="text-align: center; color: #666; margin-bottom: 30px; font-size: 1.05em;">Fill out the form below and our expert counsellors will contact you within 24 hours</p>
+                <div class="success-message" id="successMessage">
+                    Thank you! We'll contact you shortly to discuss your study options.
+                </div>
+                <form id="enquiryForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="email">Email ID *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile Number *</label>
+                            <input type="tel" id="mobile" name="mobile" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="destination">Your Preferred Study Destination *</label>
+                            <select id="destination" name="destination" required>
+                                <option value="">Select Destination</option>
+                                <option value="Kuala Lumpur">Kuala Lumpur</option>
+                                <option value="Selangor">Selangor</option>
+                                <option value="Penang">Penang</option>
+                                <option value="Johor">Johor</option>
+                                <option value="Malacca">Malacca</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Course *</label>
+                            <input type="text" id="course" name="course" placeholder="e.g., Computer Science, Business" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="studyPlan">When do you plan to study? *</label>
+                            <select id="studyPlan" name="studyPlan" required>
+                                <option value="">Please Select</option>
+                                <option value="Immediate">Immediate (Within 1 month)</option>
+                                <option value="1-3 months">1-3 months</option>
+                                <option value="3-6 months">3-6 months</option>
+                                <option value="6-12 months">6-12 months</option>
+                                <option value="Next year">Next year</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Your Preferred Year *</label>
+                            <select id="year" name="year" required>
+                                <option value="">Select Year</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">I consent to receiving calls, WhatsApp, Email and Google RCS to assist with this enquiry. *</label>
+                    </div>
+                    
+                    <div class="btn-group">
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                        <a href="https://api.whatsapp.com/send/?phone=60177737817" target="_blank" class="btn btn-whatsapp">💬 Chat on WhatsApp</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <div class="container">
+            <h2 style="margin-bottom: 20px; font-size: 2.2em;">Get In Touch with ApplyRadar</h2>
+            <p style="max-width: 700px; margin: 0 auto 30px; font-size: 1.1em;">Our counsellors are here to answer your questions and guide you through every step of the application process.</p>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h4>🇲🇾 ApplyRadar Malaysia Office</h4>
+                    <p>B-01-37, Dataran Cascades<br>
+                    No.13A, Jalan PJU 5/1<br>
+                    Kota Damansara, 47810<br>
+                    Petaling Jaya, Selangor<br>
+                    <strong>Phone: +603-7628 4597</strong><br>
+                    <strong>WhatsApp: <a href="https://api.whatsapp.com/send/?phone=60177737817" style="color: #25D366;">+60 17-773 7817</a></strong></p>
+                </div>
+                <div class="contact-card">
+                    <h4>🇸🇬 ApplyRadar Singapore Office</h4>
+                    <p>ApplyRadar Pte Ltd<br>
+                    151 Chin Swee Road<br>
+                    #12-05, Manhattan House<br>
+                    Singapore 169876<br><br>
+                    <strong>Serving students since 2009</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('enquiryForm');
+        const successMessage = document.getElementById('successMessage');
+        
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                email: document.getElementById('email').value,
+                mobile: document.getElementById('mobile').value,
+                destination: document.getElementById('destination').value,
+                course: document.getElementById('course').value,
+                studyPlan: document.getElementById('studyPlan').value,
+                year: document.getElementById('year').value,
+                consent: document.getElementById('consent').checked,
+                timestamp: new Date().toISOString()
+            };
+            
+            console.log('Form submitted:', formData);
+            
+            successMessage.style.display = 'block';
+            form.reset();
+            
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 5000);
+            
+            window.scrollTo({
+                top: successMessage.offsetTop - 100,
+                behavior: 'smooth'
+            });
+        });
+        
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
